@@ -15,7 +15,3 @@ gemspec
 gem 'mongoid',  github: 'mongoid/mongoid'
 gem 'carrierwave', :github => "jnicklas/carrierwave"
 gem 'devise'
-# gem 'sass-rails', '~> 4.0.0'
-# gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
-#                               :github => 'anjlab/bootstrap-rails',
-#                               :branch => '3.0.0'
