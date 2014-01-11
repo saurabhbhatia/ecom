@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
   s.add_dependency "jquery-rails", "~> 3.0.4"
   s.add_dependency "jquery-ui-rails", "~> 4.1.1"
   s.add_dependency "sass-rails", ">= 3.2"
-  s.add_dependency "bootstrap-sass", "~> 3.0.3.0"
+  s.add_dependency "bootstrap-sass", :github => "twbs/bootstrap-sass"
 end
