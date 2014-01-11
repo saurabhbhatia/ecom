@@ -10,10 +10,9 @@ GIT
 
 GIT
   remote: git://github.com/saurabhbhatia/ecom.git
-  revision: ec73ce405b6615f323bb3b8fcf2cab9cc8b38435
+  revision: a3a215dc54ff193e7bdca5ae333469dd1f51892f
   specs:
     ecom (0.0.1)
-      bootstrap-sass (~> 3.0.3.0)
       jquery-rails (~> 3.0.4)
       jquery-ui-rails (~> 4.1.1)
       rails (~> 4.0.2)
@@ -48,8 +47,6 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.1)
     atomic (1.1.14)
-    bootstrap-sass (3.0.3.0)
-      sass (~> 3.2)
     bson (2.1.0)
     builder (3.1.4)
     coffee-rails (4.0.1)
