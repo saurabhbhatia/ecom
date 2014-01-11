@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mongoid/mongoid.git
-  revision: 18dbb17af4c003d0cd25e633a66b2fec831f0859
+  revision: fb8fbda750b1a036201476f410f867c38d516388
   specs:
     mongoid (4.0.0.alpha2)
       activemodel (>= 4.0.0)
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/saurabhbhatia/ecom.git
-  revision: 49122292a9ede0b2d396b0447c98784184ca0fd8
+  revision: a492872c36797c6e22ab99e1cb3759f495f5ccf8
   specs:
     ecom (0.0.1)
       jquery-rails (~> 3.0.4)
