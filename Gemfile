@@ -15,3 +15,5 @@ gemspec
 gem 'mongoid',  github: 'mongoid/mongoid'
 gem 'carrierwave', :github => "jnicklas/carrierwave"
 gem 'devise'
+gem "bootstrap-sass", :github => "twbs/bootstrap-sass"
+

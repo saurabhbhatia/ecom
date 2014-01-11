@@ -18,6 +18,13 @@ GIT
       origin (~> 2.1)
       tzinfo (>= 0.3.37)
 
+GIT
+  remote: git://github.com/twbs/bootstrap-sass.git
+  revision: f9801791672aec6abd8257506487fdf1541fa74a
+  specs:
+    bootstrap-sass (3.0.3.0)
+      sass (~> 3.2)
+
 PATH
   remote: .
   specs:
@@ -25,6 +32,7 @@ PATH
       jquery-rails (~> 3.0.4)
       jquery-ui-rails (~> 4.1.1)
       rails (~> 4.0.2)
+      sass-rails (>= 3.2)
 
 GEM
   remote: https://rubygems.org/
@@ -105,6 +113,11 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.1.1)
+    sass (3.2.13)
+    sass-rails (4.0.1)
+      railties (>= 4.0.0, < 5.0)
+      sass (>= 3.1.10)
+      sprockets-rails (~> 2.0.0)
     sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -129,6 +142,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass!
   carrierwave!
   devise
   ecom!
