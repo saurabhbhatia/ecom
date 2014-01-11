@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/saurabhbhatia/ecom.git
-  revision: 15e858a55a67a71aa665fc356ac249ad4b1dfc55
+  revision: 4a5c0b7d2506f339402dce576c8b4e327c4d018a
   specs:
     ecom (0.0.1)
       devise
