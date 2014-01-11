@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require boostrap
  *= sticky-footer-navbar.css
  *= require_tree .
  */
