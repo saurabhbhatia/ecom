@@ -10,14 +10,13 @@ GIT
 
 GIT
   remote: git://github.com/saurabhbhatia/ecom.git
-  revision: 4a5c0b7d2506f339402dce576c8b4e327c4d018a
+  revision: c94fa61cd25821df1ab0de3e475c06b2ef241679
   specs:
     ecom (0.0.1)
       devise
       jquery-rails (~> 3.0.4)
       jquery-ui-rails (~> 4.1.1)
       rails (~> 4.0.2)
-      sass-rails (>= 3.2)
 
 GEM
   remote: https://rubygems.org/

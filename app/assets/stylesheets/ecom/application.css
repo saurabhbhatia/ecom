@@ -10,6 +10,6 @@
  *
  *= require_self
  *= require bootstrap
- *= sticky-footer-navbar.css
+ *= require sticky-footer-navbar
  *= require_tree .
  */
