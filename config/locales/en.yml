@@ -1,4 +1,5 @@
 en:
   ecom:
-     products:
-	  add_to_cart: add_to_cart
+    products:
+      confirmed: "Your product was successfully created"
+      add_to_cart: "Successfully Added product to Cart, Want to Continue Shopping ?"
