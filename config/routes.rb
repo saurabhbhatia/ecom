@@ -4,4 +4,5 @@ Ecom::Engine.routes.draw do
     module: :devise
   }
   resources :products
+  root to: "products#index"
 end
