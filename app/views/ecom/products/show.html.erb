@@ -20,38 +20,6 @@
 </p>
 
 <%if user_signed_in? %>
-<%= link_to 'Edit', edit_template_path(@template) %> |
-<%= link_to 'Back', templates_path %>
-<% end %>
-
-
-
-<p id="notice"><%= notice %></p>
-
-<p>
-  <%=image_tag @product.image.url %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Sku:</strong>
-  <%= @product.sku %>
-</p>
-
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Base price:</strong>
-  <%= @product.base_price %>
-</p>
-
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+<% end %>
