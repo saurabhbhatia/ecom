@@ -15,7 +15,9 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
+	<td><%= image_tag product.image.url %></td>
         <td><%= product.name %></td>
+        <td><%= product.sku %></td>
         <td><%= product.description %></td>
         <td><%= product.base_price %></td>
         <td><%= link_to 'Show', product %></td>
