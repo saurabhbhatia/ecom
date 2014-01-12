@@ -8,7 +8,7 @@ module Ecom
     field :base_price, type: Float
     field :sku, type: String
 
-    slug :title, history: true 
+    slug :name, history: true 
     belongs_to :category
     mount_uploader :image, ImageUploader
   end
