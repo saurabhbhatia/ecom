@@ -35,6 +35,6 @@ module Ecom
   # field :unlock_token,    :type => String # Only if unlock strategy is :email or :both
   # field :locked_at,       :type => Time
   
-  has_many :orders, :dependent => destroy
+  has_many :orders, :dependent => :destroy
   end
 end
