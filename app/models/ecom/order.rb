@@ -10,8 +10,15 @@ module Ecom
     has_many :line_items, :dependent => :destroy
     belongs_to :user
     
-    scope :in_progress, where(:checked_out_at.exists => true )
-    scope :complete, where(:checked_out_at => nil )
+    scope :in_progress, lambda {
+     {
+      :where => { :checked_out_at.gt.exists => true }     }
+    }
+    
+      scope :complete, lambda {
+     {
+      :where => { :checked_out_at.gt.exists => false }     }
+    }
 
     COMPLETE = "complete"
     IN_PROGRESS = "in_progress"
