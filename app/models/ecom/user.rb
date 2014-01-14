@@ -1,6 +1,8 @@
 module Ecom
   class User
-    include Mongoid::Document
+  include Mongoid::Document
+  include Mongoid::Timestamps
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -35,6 +37,6 @@ module Ecom
   # field :unlock_token,    :type => String # Only if unlock strategy is :email or :both
   # field :locked_at,       :type => Time
   
-  has_many :orders, :dependent => :destroy
+   has_many :orders, :dependent => :destroy
   end
 end

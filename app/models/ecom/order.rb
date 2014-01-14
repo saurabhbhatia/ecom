@@ -2,6 +2,7 @@ module Ecom
   class Order
     include Mongoid::Document
     include Mongoid::Timestamps
+    
     field :user_id, type: String
     field :checked_out_at, type: DateTime   
     field :total_price,type: DateTime
