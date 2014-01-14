@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Ecom
+# module Ecom
  class ImageUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
@@ -50,4 +50,4 @@ module Ecom
   # end
 
  end
-end
+# end
