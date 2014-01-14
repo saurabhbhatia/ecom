@@ -1,3 +1,3 @@
 ActiveSupport::Inflector.inflections do |inflect|
-  inflect.singular /^(orders)$/i, '\1'
+  inflect.singular /^(order)$/i, '\1'
 end
