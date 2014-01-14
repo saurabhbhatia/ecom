@@ -27,7 +27,6 @@ module Ecom
       return [] unless product
       complete.includes(:line_items).
         where(["line_items.product_id = ?", product.id]).
-        order("orders.checked_out_at DESC")
     end
 
     def checkout!
