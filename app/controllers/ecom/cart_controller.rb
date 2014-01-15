@@ -33,7 +33,11 @@ module Ecom
   protected
 
   def get_cart_value
-    @cart = session[:cart_id] ? Purchase.find(session[:cart_id]) : current_user.purchases.new(params[:purchase])
+    if session[:cart_id]
+      Purchase.find(session[:cart_id])
+    else
+     current_user.purchases.new(params[:purchase])
+    end
   end
 
   end
