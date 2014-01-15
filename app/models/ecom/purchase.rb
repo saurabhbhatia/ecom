@@ -44,8 +44,7 @@ module Ecom
     end
 
     def display_name
-      ActionController::Base.helpers.number_to_currency(total_price) + 
-        " - Purchase ##{id} (#{user.email})"
+      ActionController::Base.helpers.number_to_currency(total_price) + "- Purchase ##{id} (#{user.email})"
     end
  
     
