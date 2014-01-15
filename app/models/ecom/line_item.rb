@@ -3,7 +3,7 @@ module Ecom
     include Mongoid::Document
     include Mongoid::Timestamps
     
-    field :order_id, type: String
+    field :purchase_id, type: String
     field :product_id, type: String
     field :price, type: String    
 
