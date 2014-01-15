@@ -30,8 +30,6 @@ module Ecom
     redirect_to root_path
   end
 
-  protected
-
   def get_cart_value
     @cart = session[:cart_id] ? Purchase.find(session[:cart_id]) : current_user.Purchase.new(params[:purchase])
   end
