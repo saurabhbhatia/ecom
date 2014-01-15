@@ -1,8 +1,5 @@
 module Ecom
   class Purchase
-    extend ActiveModel::Naming
-    include ActiveModel::Conversion
-  
     include Mongoid::Document
     include Mongoid::Timestamps
     
