@@ -5,7 +5,7 @@ module Ecom
     
     field :purchase_id, type: String
     field :product_id, type: String
-    field :price, type: String    
+    field :price, type: Float
 
     belongs_to :order
     belongs_to :product
