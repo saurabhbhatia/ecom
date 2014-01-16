@@ -36,7 +36,7 @@ module Ecom
     if session[:cart_id]
       Purchase.find(session[:cart_id])
     else
-     cart = .create
+     cart = Purchase.create
      session[:cart_id] = cart.id
      cart
     end
