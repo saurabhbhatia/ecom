@@ -10,7 +10,7 @@ module Ecom
     belongs_to :purchase
     belongs_to :product
     
-    def self.make_items(purchase_id, product_id, price)
+    def make_items(purchase_id, product_id, price)
       item = LineItem.new
       item.purchase_id = purchase_id
       item = product_id
