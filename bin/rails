@@ -4,7 +4,6 @@
 ENGINE_ROOT = File.expand_path('../..', __FILE__)
 ENGINE_PATH = File.expand_path('../../lib/ecom/engine', __FILE__)
 
-require 'rack/mongoid'
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "sprockets/railtie"

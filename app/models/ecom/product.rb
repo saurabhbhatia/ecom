@@ -13,8 +13,8 @@ module Ecom
     mount_uploader :image, ImageUploader
     
     def recalculate_price!
-     self.total_price = line_items.inject(0.0){|sum, line_item| sum += line_item.price }
-     save!
+      self.total_price = line_items.inject(0.0){|sum, line_item| sum += line_item.price }
+      save!
    end
   end
 end
