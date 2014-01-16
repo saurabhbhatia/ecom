@@ -9,7 +9,7 @@ module Ecom
     @cart.save if @cart.new_record?
     session[:cart_id] = @cart.id
     product = Product.find(params[:id])
-    LineItem.create! :purchase_id => @cart.id, :product => product, :price => product.price
+    LineItem.make_items(@cart.id, product.id, product.price)
     @cart.recalculate_price!
     flash[:notice] = "Product Added to Cart"
     redirect_to '/cart'
@@ -36,7 +36,7 @@ module Ecom
     if session[:cart_id]
       Purchase.find(session[:cart_id])
     else
-     cart = Purchase.create
+     cart = .create
      session[:cart_id] = cart.id
      cart
     end
