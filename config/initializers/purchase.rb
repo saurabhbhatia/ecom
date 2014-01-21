@@ -1,1 +1,1 @@
-require Rails.root.join('app','models','storezilla','purchase.rb')
+require Rails.root.join('app','models','ecom','purchase.rb')
