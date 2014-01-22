@@ -11,7 +11,7 @@
   </tr>
   <% for line_item in @cart.line_items %>
     <tr>
-      <td><%= line_item.product.title %></td>
+      <td><%= line_item.product.name %></td>
       <td><%= number_to_currency line_item.price %></td>
       <td><%= link_to "Remove", remove_from_cart_path(line_item), :method => :post %></td>
     </tr>
@@ -26,5 +26,5 @@
 <%= form_tag checkout_path, :style => "text-align: right" do |f| %>
   <%= link_to "Continue Shopping", root_path %>
   or
-  <%= submit_tag "Checkout" %>
+  <%= submit_tag "Checkout"%>
 <% end %>

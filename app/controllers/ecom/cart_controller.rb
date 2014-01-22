@@ -6,14 +6,14 @@ module Ecom
     before_filter :get_cart_value
     
   def add
-    @cart.save if @cart.new_record?
+    @cart.save
     session[:cart_id] = @cart.id
     product = Product.find(params[:id])
     item = LineItem.new
-    item.make_items(@cart.id, product.id, product.price)
+    item.make_items(@cart.id, product.id, product.base_price)
     @cart.recalculate_price!
     flash[:notice] = "Product Added to Cart"
-    redirect_to '/cart'
+    redirect_to cart_path
   end
 
   def remove
@@ -34,12 +34,12 @@ module Ecom
   protected
 
   def get_cart_value
-    if session[:cart_id]
-      Purchase.find(session[:cart_id])
+    if session[:cart_id].nil?
+     @cart = Purchase.create
+     session[:cart_id] = @cart.id
+     @cart
     else
-     cart = Purchase.create
-     session[:cart_id] = cart.id
-     cart
+      Purchase.find(session[:cart_id])
     end
   end
 

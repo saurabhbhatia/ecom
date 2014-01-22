@@ -13,8 +13,8 @@ module Ecom
     def make_items(purchase_id, product_id, price)
       item = LineItem.new
       item.purchase_id = purchase_id
-      item = product_id
-      item = price
+      item.product_id = product_id
+      item.price = price
       item.save
     end
   end
